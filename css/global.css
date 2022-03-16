@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+  }
+  
+.wp-content{
+    margin:0 auto;
+    width:100%; 
+    max-width: 1200px ;
+}
+
+.color-df-1{
+    color: #3BB54A;
+}
+
+.color-df-2{
+    color: #2F4858;
+}

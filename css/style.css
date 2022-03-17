@@ -45,19 +45,43 @@ main div.wp-content div.text-center p {
     color: #2F4858;
 }
 /* -------SERVICE------ */
-main section div.service{
-    /* display: flex;
-    justify-content: space-between; */
-}
-
 main section div.service div.item {
-    /* width: 14%; */
-    padding: 10px;
+    width: 100%;
+    max-width: 160px; 
     margin: 5px;
     background-color: #3BB54A;
 }
 
-main section div.service div.item p {
+/* main section div.service div.item p {
     
+} */
+
+main div.wp-content .contact .input-group {
+    position: relative;
 }
 
+
+main div.wp-content .contact .input-group .email img{
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    z-index: 999;
+}
+
+
+/*------------------- GIỚI THIỆU VỀ SẢN PHẨM 2 -------------------------------*/
+main div#trial {
+    background-image: url(../images/bg-intro-1.png); 
+    background-repeat: no-repeat;
+}
+
+main div#intro-2 {
+     background-image: url(../images/bg-intro-2.png); 
+     background-repeat: no-repeat;
+}
+
+
+/* ----------------------------FOOTER------------------  */
+footer{
+    background-color: #2F4858;
+}

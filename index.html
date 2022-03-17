@@ -12,6 +12,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -20,8 +21,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- slick slide show  -->
-    <link rel="stylesheet" href="css/slick-theme.css" />
-    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="assets/slick/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/slick/css/slick.css" />
 
     <!-- reset css -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -30,6 +31,14 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/owlcarousel/css/owl.theme.default.min.css"
+    />
+
+    <!-- jquery -->
     <script src="js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -79,16 +88,25 @@
       </div>
       <div id="banner">
         <div class="item">
-          <img class="img-fluid" src="images/slideshow.png" alt="" />
+          <img class="img-fluid" src="images/banner-1.png" alt="" />
         </div>
+        <div class="item">
+          <img class="img-fluid" src="images/banner-2.png" alt="" />
+        </div>
+        <div class="item">
+          <img class="img-fluid" src="images/banner-3.png" alt="" />
+        </div> 
       </div>
     </header>
     <main>
       <div class="wp-content mt-5">
+        <!------------------------------------- LỢI ÍCH KHI SỬ DỤNG SẢN PHẨM ---------------------------------->
         <div class="text-center">
           <h1>Lợi ích khi sử dụng<span class="color-df-1"> vSalon</span></h1>
           <p>Hãy để chúng tôi đồng hành cùng thành công của bạn</p>
-          <div class="your-class">
+
+          <!-- Set up your HTML -->
+          <div class="owl-carousel">
             <div class="item border">
               <img class="img-fluid" src="images/advan-icon-1.png" alt="" />
               <h3>Gắn kết khách hàng</h3>
@@ -109,46 +127,56 @@
                 Giúp nhân viên tăng năng xuất làm việc. Quản lý hiệu quả từ xa
               </p>
             </div>
+            <div class="item border">
+              <img class="img-fluid" src="images/advan-icon-2.png" alt="" />
+              <h3>Điều phối lịch hẹn</h3>
+              <p>Không còn lo lắng khi quên lịch hẹn với khách hàng.</p>
+            </div>
           </div>
         </div>
+
+        <!----------------------------- CÁC TÍNH NĂNG CỦA SẢN PHẨM  ----------------------->
         <section>
-          <!-- <div class="service d-flex flex-wrap flex-md-row  justify-content-between"> -->
-          <div class="service row">
-            <div class="item col-lg">
+          <div
+            class="service d-flex flex-lg-row justify-content-between flex-wrap"
+          >
+            <div class="item">
               <img src="images/salon.png" alt="" />
               <p>Quản lý chuối salon</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/calender.png" alt="" />
               <p>Quản lý lịch hẹn</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/partner.png" alt="" />
               <p>Quản lý thành viên</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/shoping.png" alt="" />
               <p>Bán hàng</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/stock.png" alt="" />
               <p>Quản lý kho</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/employee.png" alt="" />
               <p>Quản lý nhân viên</p>
             </div>
-            <div class="item col-lg">
+            <div class="item">
               <img src="images/statistics.png" alt="" />
               <p>Báo cáo thống kê</p>
             </div>
           </div>
         </section>
+
+        <!------------------------ GIỚI THIỆU VỀ SẢN PHẨM  1------------------------>
         <div class="row mt-5">
-          <div class="col">
-            <img src="images/business-people.png" alt="" />
+          <div class="col-md-6">
+            <img class="img-fluid" src="images/business-people.png" alt="" />
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <h5 class="mt-5">Tổng hợp dữ liệu nhanh chóng, chính xác</h5>
             <p class="mt-3">
               Báo cáo thông tin lịch hẹn, doanh thu… chi tiết đến từng salon
@@ -158,53 +186,102 @@
             </p>
           </div>
         </div>
-        <div class="text-center mt-5">
-          <h1>Bảng giá phần mềm quản lý <span>Spa, salon vSalon</span></h1>
-          <p>
-            Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử
-            miễn phí 30 ngày
-          </p>
-        </div>
-        <section class="supplies row">
-          <div class="basic col-4 bg-warning">
-            <h3>Gói cơ bản</h3>
-            <p>Dành cho cửa hàng nhỏ, mới bắt đầu kinh doanh</p>
-            <h1 class="price">139.000 vnd</h1>
-            <span>1 cửa hàng/tháng</span>
-            <span>Không giới hạn người dùng</span>
-            <span>Không giới hạn tính năng</span>
-            <span>Không phí khởi tạo</span>
-            <button class="btn-trial btn btn-success">Dùng thử ngay</button>
-          </div>
-          <div class="col-4">
-            <img src="images/computer.png" alt="" />
+
+        <!----------------------- BẢNG GIÁ PHẦN MỀM QUẢN LÝ ------------------------->
+        <section>
+          <div class="text-center mt-5">
+            <h1>Bảng giá phần mềm quản lý <span>Spa, salon vSalon</span></h1>
             <p>
-              Lưu ý : <span>Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để mua
-              thêm cửa hàng mời quý khách nâng cấp lên gói
-              <span>nâng cao</span>.
+              Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử
+              miễn phí 30 ngày
             </p>
           </div>
-          <div class="advanced col-4 bg-warning">
-            <h3>GÓI nâng cao</h3>
-            <p>Dành cho mô hình kinh doanh chuỗi</p>
-            <h1 class="price">289.000 vnd</h1>
-            <span>1 cửa hàng/tháng</span>
-            <span>Không giới hạn người dùng</span>
-            <span>Thêm chi nhánh 99.000 đ/tháng</span>
-            <span>Không giới hạn tính năng</span>
-            <span>Không phí khởi tạo</span>
-            <button class="btn-trial btn btn-success">Dùng thử ngay</button>
+          <div class="supplies row">
+            <div class="basic col-lg-4 col-md-6 border pt-5">
+              <div class="text-center">
+                <h3>Gói cơ bản</h3>
+                <p>Dành cho cửa hàng nhỏ, mới bắt đầu kinh doanh</p>
+                <h1 class="price">139.000 vnd</h1>
+              </div>
+              <div class="service" style="margin-left: 59px">
+                <p><i class="fa-solid fa-circle-check"></i> 1 cửa hàng/tháng</p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không giới hạn người
+                  dùng
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không giới hạn tính
+                  năng
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không phí khởi tạo
+                </p>
+              </div>
+              <div style="border-top: 1px dashed; width: 80%; margin: 0px auto">
+                <button
+                  class="btn-trial btn btn-success mt-3"
+                  style="display: block; margin: 0px auto"
+                >
+                  Dùng thử ngay
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 border">
+              <img src="images/computer.png" alt="" />
+              <p>
+                Lưu ý : <span>Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để
+                mua thêm cửa hàng mời quý khách nâng cấp lên gói
+                <span>nâng cao</span>.
+              </p>
+            </div>
+            <div class="advanced col-lg-4 col-md-6border pt-5">
+              <div class="text-center">
+                <h3>GÓI nâng cao</h3>
+                <p>Dành cho mô hình kinh doanh chuỗi</p>
+                <h1 class="price">289.000 vnd</h1>
+              </div>
+              <div class="service" style="margin-left: 59px">
+                <p><i class="fa-solid fa-circle-check"></i> 1 cửa hàng/tháng</p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không giới hạn người
+                  dùng
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Thêm chi nhánh 99.000
+                  đ/tháng
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không giới hạn tính
+                  năng
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> Không phí khởi tạo
+                </p>
+              </div>
+              <div style="border-top: 1px dashed; width: 80%; margin: 0px auto">
+                <button
+                  class="btn-trial btn btn-success mt-3"
+                  style="display: block; margin: 0px auto"
+                >
+                  Dùng thử ngay
+                </button>
+              </div>
+            </div>
           </div>
         </section>
-        <div class="advertisement text-center container w-75 mt-5">
-          <h2>
-            Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói
-            dịch vụ phù hợp sau nhé!
-          </h2>
-          <button class="btn-trial btn btn-success">Dùng thử ngay</button>
-        </div>
-        <section class="mt-5">
-          <div class="row">
+      </div>
+
+      <div id="trial" class="text-center mt-5">
+        <h2>
+          Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói
+          dịch vụ phù hợp sau nhé!
+        </h2>
+        <button class="btn-trial btn btn-success">Dùng thử ngay</button>
+      </div>
+
+        <!----------------------- MOBILE SECTION ---------------------------->
+        <section>
+          <div class="wp-content row mt-5">
             <div class="col-lg-6">
               <h1>
                 Ứng dụng quản lý salon miễn phí <span>trên điện thoại</span>
@@ -223,11 +300,18 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <img src="images/mobile.png" alt="" />
+              <img
+                width="100%"
+                class="img-fluid"
+                src="images/mobile.png"
+                alt=""
+              />
             </div>
           </div>
         </section>
-        <section class="mt-5">
+
+        <!----------------------- CẢM NHẬN CỦA KHÁCH HÀNG ------------------->
+        <section class="wp-content mt-5">
           <div class="text-center">
             <h1>Lắng nghe cảm nhận của khách hàng về vSalon</h1>
             <p>
@@ -235,51 +319,167 @@
               tôi
             </p>
           </div>
-            <div class="your-class">
-              <div class="item border">
-                <img class="img-fluid" src="images/chi-hue.png" alt="" />
-                <h3>Chị Huế</h3>
-                <span> Marketing Ritta Hair Salon </span>
-                <p>
-                  Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing
-                  của chúng tôi đến với khách hàng, nhất là các dịp lễ trong
-                  năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                  thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng
-                  khách hàng.
-                </p>
-              </div>
-              <div class="item border">
-                <img class="img-fluid" src="images/helen-tran.png" alt="" />
-                <h3>Bà Helen Trần</h3>
-                <span>Giám đốc Eden Beauty</span>
-                <p>
-                  Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing
-                  của chúng tôi đến với khách hàng, nhất là các dịp lễ trong
-                  năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                  thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng
-                  khách hàng.
-                </p>
-              </div>
-              <div class="item border">
-                <img class="img-fluid" src="images/ngoc-anh.png" alt="" />
-                <h3>Anh Ngọc Anh</h3>
-                <span>Giám đốc chuỗi Spa Lagertroemia</span>
-                <p>
-                  Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing
-                  của chúng tôi đến với khách hàng, nhất là các dịp lễ trong
-                  năm, không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng
-                  thông điệp của chúng tôi vẫn truyền tải được đến với đối tượng
-                  khách hàng.
-                </p>
-              </div>
+          <div class="customer-review">
+            <div class="item border">
+              <img class="img-fluid" src="images/chi-hue.png" alt="" />
+              <h3>Chị Huế</h3>
+              <span> Marketing Ritta Hair Salon </span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
             </div>
-         
+            <div class="item border">
+              <img class="img-fluid" src="images/helen-tran.png" alt="" />
+              <h3>Bà Helen Trần</h3>
+              <span>Giám đốc Eden Beauty</span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
+            </div>
+            <div class="item border">
+              <img class="img-fluid" src="images/ngoc-anh.png" alt="" />
+              <h3>Anh Ngọc Anh</h3>
+              <span>Giám đốc chuỗi Spa Lagertroemia</span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
+            </div>
+            <div class="item border">
+              <img class="img-fluid" src="images/ngoc-anh.png" alt="" />
+              <h3>Anh Ngọc Anh</h3>
+              <span>Giám đốc chuỗi Spa Lagertroemia</span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
+            </div>
+            <div class="item border">
+              <img class="img-fluid" src="images/ngoc-anh.png" alt="" />
+              <h3>Anh Ngọc Anh</h3>
+              <span>Giám đốc chuỗi Spa Lagertroemia</span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
+            </div>
+            <div class="item border">
+              <img class="img-fluid" src="images/ngoc-anh.png" alt="" />
+              <h3>Anh Ngọc Anh</h3>
+              <span>Giám đốc chuỗi Spa Lagertroemia</span>
+              <p>
+                Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của
+                chúng tôi đến với khách hàng, nhất là các dịp lễ trong năm,
+                không còn phải tốn nhiều chi phí maketing đắt đỏ, nhưng thông
+                điệp của chúng tôi vẫn truyền tải được đến với đối tượng khách
+                hàng.
+              </p>
+            </div>
+          </div>
         </section>
-      </div>
+
+        <!------------------- GIỚI THIỆU VỀ SẢN PHẨM 2 ------------------------------->
+        <div id="intro-2">
+          <h1 class="wp-content text-center">
+            Khách hàng đã sử dụng vSalon Sự hài lòng của khách hàng chính là
+            thành công lớn nhất của chúng tôi
+          </h1>
+        </div>
+
+        <!-------------------------------- EMAIL  ------------------------------->
+        <div class="wp-content contact text-center">
+          <h1>
+            Hơn <span>5,000</span> doanh nghiệp, chủ shop đang quản lý cửa hàng
+            như thế nào?
+          </h1>
+          <p>Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
+          <div class="container input-group w-50">
+            <div class="email">
+              <img src="images/email.png" alt="" />
+            </div>
+            <input
+              type="text"
+              class="form-control rounded ps-5"
+              placeholder="Nhập mail hoặc số điện thoại của bạn"
+            />
+            <button type="button" class="btn btn-success">Đăng ký ngay!</button>
+          </div>
+        </div>
+      
     </main>
-    <footer>
-      <div class="wp-content"></div>
+    <footer class="mt-5">
+      <div class="wp-content">
+        <div class="logo">
+          <img class="img-fluid" src="images/footer-logo.png" alt="logo" />
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mt-5">
+            <h3>Giới thiệu</h3>
+            <p>
+              e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng
+              nhu cầu quản trị và chăm sóc khách hàng của các spa, salon tóc,
+              thẩm mỹ viện...
+            </p>
+            <img src="images/facebook.png" alt="" />
+            <img class="ms-3" src="images/yotube.png" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <h3>Liên kết</h3>
+            <nav class="navbar-nav">
+              <ul class="nav-item">
+                <li class="nav-link">Điều khoản bảo mật</li>
+              </ul>
+              <ul class="nav-item">
+                <li class="nav-link">Chính sách bảo hành</li>
+              </ul>
+              <ul class="nav-item">
+                <li class="nav-link">Hình thức thanh toán</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <h3>Liên hệ</h3>
+            <p>Công Ty TNHH Orenda</p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              GPKD: 0108149044 – cấp ngày 29/01/2018
+            </p>
+            <p>
+              Tầng 4, Số 84 Tô Vĩnh Diện, Phường Khương Trung, Quận Thanh Xuân,
+              TP Hà Nội
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              0865.500.968
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              Support@vSalon.vn
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="text-center p-3">
+      <p>Copyright © 2021 <span>vSalon</span> . All rights reserved.</p>
+    </div>
   </body>
   <!-- bootstrap -->
   <script
@@ -287,6 +487,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
+
   <!-- slick slide show -->
   <script
     type="text/javascript"
@@ -296,19 +497,49 @@
     type="text/javascript"
     src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
   ></script>
-  <script src="js/slick.min.js"></script>
+  <script src="assets/slick/js/slick.min.js"></script>
+
+  <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+
   <script type="text/javascript">
+
+    // banner
     $(document).ready(function () {
-      $(".your-class").slick({
-        slidesToShow: 3,
+      $("#banner").slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        dotsClass: "slick-dots",
+        useCSS: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+      });
+    });
+
+    $(document).ready(function () {
+      $(".customer-review").slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
         dots: true,
         arrows: false,
         dotsClass: "slick-dots",
         useCSS: true,
         autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplaySpeed: 2000,
       });
+    });
+
+    $(document).ready(function () {
+     var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        responsive:{
+        600:{
+            items:3
+            }
+        }
+      }
+      );
     });
   </script>
 </html>

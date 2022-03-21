@@ -33,8 +33,13 @@ header nav button.btn-login{
 }
 
 
+
 /*--------------------- Menu phone header --------------------- */
-#header #nav-mobile .nav_phone-header {
+header .navbar-toggler{
+    display: none;
+}
+
+header #nav-mobile .nav_phone-header {
     padding: 15px;
     border-bottom: 1px solid #e3e3e3;
   }
@@ -68,7 +73,7 @@ header nav button.btn-login{
     bottom: 0;
     background-color: #fff;
     z-index: 1000;
-    /* width: 0px; */
+    width: 0px;
     transition: all 0.25s ease-in-out;
     font-size: 18px;
     line-height: 24px;
@@ -76,13 +81,32 @@ header nav button.btn-login{
     max-width: 375px;
   }
   
-  #header #nav-mobile .nav_phone-header {
+  header #nav-mobile .nav_phone-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  
+
+  header #nav-mobile button.btn-register{
+    background: linear-gradient(90deg, #3BB54A 0%, #7EC341 100%);
+    border-radius: 22px;
+    color:#FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    width: 115px;
+    height: 38px;
+}
+
+header #nav-mobile button.btn-login{
+    border: 1.5px solid #3BB54A;
+    box-sizing: border-box;
+    border-radius: 33px;
+    color: #3BB54A;
+    font-weight: 600;
+    font-size: 16px;
+    width: 115px;
+    height: 38px;
+}
 
 
 /*-----------------------------MAIN------------------------ */
@@ -125,40 +149,169 @@ main section#advantage {
 }
 
 /* -----------CÁC DỊCH VỤ SẢN PHẨM MANG LẠI-------- */
-
-
 main section.service{
-    background-image: url(..//images/service-bg.jpg);
-    padding: 50px 0px;
+    background-image: url(../images/service-bg.png);
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    background-position:center;
+    padding: 60px 0px;
 }
 
-main section.service div.item {
+main section.service li.item {
     width: 100%;
     max-width: 160px; 
     margin: 5px;
 }
 
-main section.service div.item img {
+main section.service li.item img {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-main section.service div.item div.icon {
+main section.service li.item div.icon {
     border-radius: 50px;
     width: 56px;
     height: 56px;
-    background: #3BB54A;
     margin: 0px auto;
+    background-color: #F7F7F7;
 }
 
-main section.service div.item p {
+main section.service li.item p {
     text-align: center;
 }
 
+main section.service .tab_navigation{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+main section.service .tab_navigation li{
+    cursor: pointer;
+    transition: all 0.3 ease-in-out;
+}
+main section.service .tab_navigation li div.active{
+    background: #3BB54A;
+}
 
+/* .tab_container-area{
+
+} */
+
+main section.service .tab_container{
+    padding: 10px;
+    display: none;
+}
+
+
+/* ---------------------BẢNG GIÁ SẢN PHẨM-----------------  */
+/* Basic */
+#service-price .title h1{
+    font-size: 36px;
+    color: #2F4858;
+    font-weight: 700;
+}
+#service-price .title h1 span{
+    color: #3BB54A; 
+}
+
+#service-price .title p{
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+#service-price .supplies .basic {
+    background-image: url(../images/bg-goi-co-ban.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* background-position:center; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+#service-price .supplies .basic .title h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #4F4F4F;
+    margin-bottom: 40px;
+}
+
+#service-price .supplies .basic .title p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #AEAEAE;
+    margin-bottom: 40px;
+}
+
+#service-price .service {
+    margin-left: 60px;
+}
+
+#service-price .basic .service  p i{
+    color:  #3BB54A;
+    margin-right: 15px;
+}
+
+#service-price .service p {
+    color: #4A6069;
+    font-size: 15px;
+}
+
+#service-price  .btn-trial {
+    /* position: absolute;
+    bottom: 10%; */
+}
+
+#service-price .btn-trial :hover{
+    color: #4A6069;
+}
+
+/* middle */
+#service-price .supplies .middle img{
+    width: 100%;
+}
+
+#service-price .supplies .middle i {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
+}
+
+#service-price .supplies .middle span {
+    color: #EB5757;
+}
+
+/* Advanced */
+#service-price .supplies .advanced {
+    background-image: url(../images/bg-goi-nang-cao.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px
+}
+
+#service-price .supplies .advanced .title h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color:  #F9C52C;
+    margin-bottom: 40px;
+}
+
+#service-price .supplies .advanced .title p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #AEAEAE;
+    margin-bottom: 40px;
+}
+
+
+#service-price .advanced .service  p i{
+    color:  #F9C52C;
+    margin-right: 15px;
+}
 
 /* Gửi email */
-
 main div.wp-content .contact .input-group {
     position: relative;
 }
@@ -179,7 +332,7 @@ main div#trial {
     padding: 60px 0px;
 }
 
-main div#intro-1 img {
+main div#service-detail .tab_container img {
     border: 2px solid #3BB54A;
     box-sizing: border-box;
     border-radius: 10px;
@@ -249,8 +402,30 @@ main section#email {
 
 /* ---------------------------------------------------------FOOTER----------------------------------------------------  */
 footer{
-    background-color: #2F4858;
+   background-image: url(../images/footer-bg.png);
+   background-repeat: no-repeat;
+   padding: 50px 0px;
+   background-position-x: -188px;
 }
+
+/* Back to top  */
+#backTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b5b5b5;
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    right: 36px;
+    bottom: 132px;
+    padding: 13.5px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 999;
+  }
 
 
 /* ------------------------------Owl Carousel----------------- */
@@ -280,16 +455,7 @@ footer{
 }
 
 
-
-
-
-/* Animation slideshow  */
-
-/* #slideshow-1 {
-    max-width: 928px;
-    margin: auto;
-    margin-bottom: 72px;
-} */
+/* -- -------------Animation sl--ideshow----------------- --  */
 
 #slideshow-1 .owl-item{
     transform-origin: center center;
@@ -379,5 +545,21 @@ margin: 20px;
 #slideshow-1 {
     max-width: 928px;
     margin: auto;
-    margin-bottom: 72px;
+}
+
+/* Responsive  */
+@media (max-width: 1050px) {
+    header nav.navbar{
+        display: none;
+    }
+    header .navbar-toggler {
+        display: block;
+        width: 100%;
+        max-width: 50px;
+        height: 100%;
+    }
+    header .navbar-toggler i {
+        font-size: 20px;
+    }
+
 }

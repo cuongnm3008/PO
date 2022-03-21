@@ -4,6 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Inter';
+    background-color: #FAFAFA;
   }
   
 .wp-content{
@@ -12,11 +13,15 @@ body, html {
     max-width: 1200px ;
 }
 
-.color-df-1{
+.text-default-1{
     color: #3BB54A;
 }
 
-.color-df-2{
+.bg-default{
+    color: #3BB54A;
+}
+
+.text-df-2{
     color: #2F4858;
 }
 

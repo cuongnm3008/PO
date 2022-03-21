@@ -54,7 +54,7 @@
           display: none !important;
     }
 
-    .owl-item.active{
+    /* .owl-item.active{
       transform: translateX(50%) scale(0.9);
       z-index: 1;
     }
@@ -67,15 +67,81 @@
     .owl-item{
       transform: translateX(-50%) scale(0.9);
       z-index: 1;
+      position: relative;
     }
-
-
 
     #slideshow-1 .owl-item.active.center {
       transform: unset;
       opacity: 1;
       z-index: 2;
+      background-color: bisque;
+} */
+
+#slideshow-1 .owl-item{
+        transform-origin: center center;
+        transition: all .5s ease-in-out;
+    }
+    #slideshow-1 .owl-item.active,
+    #slideshow-1 .owl-item{
+        transform: translateX(50%) scale(0.9);
+        /* background: #E3E1F1; */
+        opacity: 0.7;
+        z-index: 1;
+    }
+    #slideshow-1 .owl-item.center ~ .owl-item.active,
+    #slideshow-1 .owl-item.center ~ .owl-item{
+        transform: translateX(-50%) scale(0.9);
+        z-index: 1;
+    }
+    #slideshow-1 .owl-item.active.center{
+        transform: unset;
+        opacity: 1;
+        z-index: 2;
+    }
+    #slideshow-1 .owl-item.active.center .item{
+        background: #F5F5F7;
+    }
+
+#slideshow-1 .owl-item.active.center .item{
+    background: #F5F5F7;
+    margin: 20px;
 }
+#slideshow-1 .item{
+    background: #E3E1F1;
+    /* Drop shardow */
+    box-shadow: -3px 5px 20px rgba(113, 97, 186, 0.15);
+    border-radius: 16px;
+    margin: 20px;
+}
+#slideshow-1.owl-theme .owl-nav button.owl-prev,
+#slideshow-1.owl-theme .owl-nav button.owl-next{
+    background: #EEEDF2;
+    border: 1px solid #7161BA;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: fit-content;
+    height: 42px;
+}
+#slideshow-1.owl-theme .owl-nav button.owl-prev{
+    position: absolute;
+    top: 46%;
+    width: auto;
+    left: calc(100% - ( 100% + 150px ));
+}
+
+#slideshow-1.owl-theme .owl-nav button.owl-next{
+    position: absolute;
+    top: 46%;
+    right: calc(100% - ( 100% + 150px ));
+    width: auto;
+}
+
+#slideshow-1 {
+    max-width: 928px;
+    margin: auto;
+    margin-bottom: 72px;
+}
+
   </style>
     <div id="slideshow-1" class="owl-carousel owl-theme">
       <div class="item">
@@ -138,6 +204,7 @@
                 center: true,
                 loop: true,
                 dots: true,
+                nav : true,
                 responsive: {
                     0: {
                         items: 1,

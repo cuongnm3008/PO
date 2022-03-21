@@ -1,5 +1,6 @@
 /* ----------------------HEADER------------------------ */
 /* -------------MENU-------------- */
+
 header nav.navbar ul.navbar-nav li.nav-item .nav-link {
     font-weight: 500;
     font-size: 16px;    
@@ -32,6 +33,58 @@ header nav button.btn-login{
 }
 
 
+/*--------------------- Menu phone header --------------------- */
+#header #nav-mobile .nav_phone-header {
+    padding: 15px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  
+  #navbarResponsive ul li :first-child a {
+    color: #EE0033 !important;
+    font-weight: 600;
+  }
+  
+  #navbarResponsive ul {
+    list-style: none; 
+  }
+  
+  #navbarResponsive ul li ::before {
+    content: "\2022";  
+    color: red;
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    font-size: 18px;
+  }
+  
+  #navbarResponsive ul li:nth-last-child(5) ::before {
+    display: none;  
+  } 
+  
+  #wapper-phone-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1000;
+    /* width: 0px; */
+    transition: all 0.25s ease-in-out;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 0;
+    max-width: 375px;
+  }
+  
+  #header #nav-mobile .nav_phone-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+
+
 /*-----------------------------MAIN------------------------ */
 main div.wp-content div.text-center h1 {
     font-weight: 700;
@@ -48,9 +101,7 @@ main div.wp-content div.text-center p {
 /* Lợi ích khi sử dụng sản phẩm  */
 
 main section#advantage { 
-    background-color: #FAFAFA;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
 }
 
 #slideshow-1 .item {
@@ -73,24 +124,40 @@ main section#advantage {
     margin-top: 15px;
 }
 
-/* -----------Cách dịch vụ sản phẩm mang đến-------- */
-main section div.service div.item {
+/* -----------CÁC DỊCH VỤ SẢN PHẨM MANG LẠI-------- */
+
+
+main section.service{
+    background-image: url(..//images/service-bg.jpg);
+    padding: 50px 0px;
+}
+
+main section.service div.item {
     width: 100%;
     max-width: 160px; 
     margin: 5px;
 }
 
-main section div.service div.item img {
-    margin: 0px auto;
-    display: block;
+main section.service div.item img {
+    margin-top: 10px;
+    margin-left: 10px;
 }
-main section div.service div.item p {
+
+main section.service div.item div.icon {
+    border-radius: 50px;
+    width: 56px;
+    height: 56px;
+    background: #3BB54A;
+    margin: 0px auto;
+}
+
+main section.service div.item p {
     text-align: center;
 }
 
-/* main section div.service div.item p {
-    
-} */
+
+
+/* Gửi email */
 
 main div.wp-content .contact .input-group {
     position: relative;
@@ -116,19 +183,32 @@ main div#intro-1 img {
     border: 2px solid #3BB54A;
     box-sizing: border-box;
     border-radius: 10px;
+    box-shadow: 10px 15px #e1ffe5;
 }
 
 main div#intro-2 {
      background-image: url(../images/bg-intro-2.png); 
      background-repeat: no-repeat;
-     padding: 180px 0px;
+     padding: 150px 0px;
 }
+
+
+/* -------------------Mobile section------------------- */
+
+main section.mobile { 
+    background-color: #FFFFFF;
+    padding: 50px 0px;
+}
+
+
 
 /* ------------------Cảm nhận của khách hàng-------------------  */
 main section.customer{
     background-image: url(../images/customer-review-bg.jpg);
     background-repeat: no-repeat;
+    padding: 50px 0px;
 }
+
 
 main section.customer #slideshow-2 .item {
     background: #FFFFFF;
@@ -146,13 +226,24 @@ main section.customer #slideshow-2 .item img {
     border-radius: 50%;
 }
 
-main section.customer #slideshow-2 .item h3,span,p {
+main section.customer #slideshow-2 .item h3 {
+    text-align: center;
+    display: block;
+} 
+main section.customer #slideshow-2 .item span {
+    text-align: center;
+    display: block;
+} 
+main section.customer #slideshow-2 .item p {
     text-align: center;
     display: block;
 } 
 
-
-
+/* --------------section gửi email liên hệ-------------------  */
+main section#email {
+    background-color: #FFFFFF;
+    padding: 50px 0px;
+}
 
 
 
@@ -186,4 +277,107 @@ footer{
 
 .owl-dot span{
       display: none !important;
+}
+
+
+
+
+
+/* Animation slideshow  */
+
+/* #slideshow-1 {
+    max-width: 928px;
+    margin: auto;
+    margin-bottom: 72px;
+} */
+
+#slideshow-1 .owl-item{
+    transform-origin: center center;
+    transition: all .5s ease-in-out;
+}
+#slideshow-1 .owl-item.active,
+#slideshow-1 .owl-item{
+    transform: translateX(50%) scale(0.9);
+    /* background: #E3E1F1; */
+    opacity: 0.7;
+    z-index: 1;
+}
+#slideshow-1 .owl-item.center ~ .owl-item.active,
+#slideshow-1 .owl-item.center ~ .owl-item{
+    transform: translateX(-50%) scale(0.9);
+    z-index: 1;
+}
+#slideshow-1 .owl-item.active.center{
+    transform: unset;
+    opacity: 1;
+    z-index: 2;
+}
+#slideshow-1 .owl-item.active.center .item{
+    /* background: #F5F5F7; */
+}
+
+#slideshow-1 .owl-item.active.center .item{
+/* background: #F5F5F7; */
+margin: 20px;
+}
+#slideshow-1 .item{
+/* background: #E3E1F1; */
+/* Drop shardow */
+box-shadow: -3px 5px 20px rgba(113, 97, 186, 0.15);
+border-radius: 16px;
+margin: 20px;
+}
+
+/* Preview and next button */
+
+#slideshow-1.owl-theme .owl-nav button.owl-prev,
+#slideshow-1.owl-theme .owl-nav button.owl-next{
+    /* background: #EEEDF2; */
+    border: 1px solid #3BB54A;
+    box-sizing: border-box;
+    border-radius: 100%;
+    width: fit-content;
+    height: 42px;
+}
+#slideshow-1.owl-theme .owl-nav button.owl-prev{
+    position: absolute;
+    top: 46%;
+    /* width: auto; */
+    width: 42px;
+    height: 42px;
+    left: calc(100% - ( 100% + 150px ));
+}
+
+#slideshow-1.owl-theme .owl-nav button.owl-next{
+    position: absolute;
+    top: 46%;
+    right: calc(100% - ( 100% + 150px ));
+    /* width: auto; */
+    width: 42px;
+    height: 42px;
+}
+
+
+#slideshow-1.owl-theme .owl-nav button.owl-next span{
+    font-size: 40px;
+    color: #3BB54A;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    left: 13px;
+}
+
+#slideshow-1.owl-theme .owl-nav button.owl-prev span{
+    font-size: 40px;
+    color: #3BB54A;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    left: 12px;
+}
+
+#slideshow-1 {
+    max-width: 928px;
+    margin: auto;
+    margin-bottom: 72px;
 }

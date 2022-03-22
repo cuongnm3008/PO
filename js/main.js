@@ -29,8 +29,8 @@ $(document).ready(function () {
               center: true,
               loop: true,
               dots: true,
-              autoplay: true,
-              autoplayTimeout : 3000,
+            //   autoplay: true,
+            //   autoplayTimeout : 3000,
               responsive: {
                   0: {
                       items: 1,

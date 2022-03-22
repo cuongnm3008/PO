@@ -44,25 +44,36 @@ body, html {
     color: #FFFFFF;
     background: #3BB54A;
     border-radius: 36px;
-    padding: 1vw 2.6vw;
+    padding: 10 32px;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 
-.line-1{
-    width: 67px;
-    height: 3px;
-    background-color: #3BB54A;
-    border: solid #3BB54A;
-    opacity: 1;
-}
 
-
-.line-2{
+.line-sm{
     width: 36px;
-    height: 3px;
+    height: 2px;
     background-color: #3BB54A;
     border: solid #3BB54A;
     opacity: 1;
+}
+
+
+.line-md{
+    width: 67px;
+    height: 2px;
+    background-color: #3BB54A;
+    border: solid #3BB54A;
+    opacity: 1;
+}
+
+
+.line-lg{
+    width: 128px;
+    height: 2px;
+    background-color: #3BB54A;
+    border: solid #3BB54A;
+    opacity: 1;
+    margin: 0px auto;
 }

@@ -37,14 +37,17 @@ header #banner .item .intro-content{
     left: 15%; 
     top: 20%;
     max-width: 600px;
-    width: 100%;
 }
 
 header #banner .item h2 {
     line-height: 1.5;
     font-weight: 700;
-    font-size: 2.5vw;
+    font-size: 38px;
     color: #2F4858;
+    margin-bottom: 60px;
+}
+header #banner .item{
+  font-size: 38px;
 }
 
 
@@ -140,7 +143,7 @@ main div.wp-content div.text-center p {
 
 /* Lợi ích khi sử dụng sản phẩm  */
 
-main section#advantage { 
+main #advantage { 
     margin-top: 60px;
 }
 
@@ -220,13 +223,28 @@ main section.service .tab_container{
 
 
 /* ---------------------BẢNG GIÁ SẢN PHẨM-----------------  */
+#service-price .supplies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#service-price .supplies .item {
+    width: 33.3%;
+    box-sizing: border-box;
+}
+
+
+
+
 /* Basic */
-#service-price .title h1{
-    font-size: 2.5vw;
+#service-price .title h2{
+    font-size: 36px;
     color: #2F4858;
     font-weight: 700;
 }
-#service-price .title h1 span{
+#service-price .title h2 span{
     color: #3BB54A; 
 }
 
@@ -261,7 +279,8 @@ main section.service .tab_container{
 }
 
 #service-price .service {
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    margin: 0px auto;
 }
 
 #service-price .basic .service  p i{
@@ -294,15 +313,17 @@ main section.service .tab_container{
     display: block;
 }
 
-#service-price .supplies .middle i {
+#service-price .supplies .middle p {
     font-size: 16px;
     color: #757575;
     font-weight: 500;
+    padding: 0px 10px;
 }
 
 #service-price .supplies .middle span {
     color: #EB5757;
 }
+
 
 /* Advanced */
 #service-price .supplies .advanced {
@@ -336,58 +357,96 @@ main section.service .tab_container{
 }
 
 /* Gửi email */
-main div.wp-content .contact .input-group {
+/* #email div.wp-content .contact .input-group {
     position: relative;
-}
+} */
 
-
+/* 
 main div.wp-content .contact .input-group .email img{
     position: absolute;
     left: 16px;
     top: 12px;
     z-index: 999;
+} */
+#email h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #2F4858;
 }
+#email h1 span {
+    color: #EFC01C;
+}
+
 
 
 /*------------------- Giới thiệu sản phẩm -------------------------------*/
-main div#trial {
+#trial {
     background-image: url(../images/bg-trial.png); 
     background-repeat: no-repeat;
-    padding: 60px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
-main div#service-detail .tab_container img {
+#trial h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    display: inline-block;
+    max-width: 960px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#trial .btn-trial {
+    border: 2px solid #FFFFFF;
+}
+
+#service-detail .tab_container img {
     border: 2px solid #3BB54A;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 10px 15px #e1ffe5;
 }
 
-main div#intro-2 {
-     background-image: url(../images/bg-intro-2.png); 
-     background-repeat: no-repeat;
-     padding: 150px 0px;
-}
 
 
 /* -------------------Mobile section------------------- */
 
-main section.mobile { 
-    background-color: #FFFFFF;
-    padding: 50px 0px;
+main .mobile { 
+    background-image: url(../images/bg-mobile.png);
+    padding: 20px 0px;
 }
 
-
+main .mobile h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #2F4858;
+    margin-top: 80px;
+}
+main .mobile p {
+    font-size: 18px;
+    color: #4A6069;
+    padding-bottom: 80px;
+}
 
 /* ------------------Cảm nhận của khách hàng-------------------  */
-main section.customer{
+#customer{
     background-image: url(../images/customer-review-bg.jpg);
     background-repeat: no-repeat;
     padding: 50px 0px;
 }
 
+#customer h2 {
+    font-weight: 500;
+    font-size: 36px;
+    color: #2F4858;
+}
 
-main section.customer #slideshow-2 .item {
+#customer p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#slideshow-2 .item {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -396,25 +455,76 @@ main section.customer #slideshow-2 .item {
     padding: 10px;
 }
 
-main section.customer #slideshow-2 .item img {
+#slideshow-2 .item .infor img {
     width: 162.9px;
     height: 162.9px;
     margin: 0px auto;
     border-radius: 50%;
 }
 
-main section.customer #slideshow-2 .item h3 {
+#slideshow-2 .item img.quote {
+    width: 29px;
+    height: 25px;
+    margin: 18px 0px 10px 10px;
+}
+
+#slideshow-2 .item .infor h3 {
     text-align: center;
     display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #3BB54A;
+    font-weight: 700;
+    padding-top: 10px;
 } 
-main section.customer #slideshow-2 .item span {
+#slideshow-2 .item .infor span {
     text-align: center;
     display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #AFAEAE;
+    padding-bottom: 15px;
 } 
-main section.customer #slideshow-2 .item p {
+#slideshow-2 .item p {
     text-align: center;
     display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    line-height: 23px;
+    padding: 0px 10px;
 } 
+
+#slideshow-2 .item .infor {
+    border-bottom: 1px dashed #3BB54A;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* Giới thiệu sản phẩm 2 */
+
+#intro-2 {
+    background-image: url(../images/bg-intro-2.png); 
+    background-repeat: no-repeat;
+    /* background-size:contain; */
+    background-position:center;
+    padding: 60px 0px;
+}
+
+#intro-2 h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3BB54A;
+}
+#intro-2 img {
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
 
 /* --------------section gửi email liên hệ-------------------  */
 main section#email {
@@ -428,8 +538,26 @@ main section#email {
 footer{
    background-image: url(../images/footer-bg.png);
    background-repeat: no-repeat;
-   padding: 50px 0px;
-   background-position-x: -188px;
+   /* background-position-x: -188px; */
+   background-color: #2F4858;
+   color:  #FFFFFF;
+}
+
+footer nav.nav-menu{
+    display: flex; 
+    flex-direction: column;
+}
+footer .intro p {
+    padding-right: 68px;
+    line-height: 1.5;
+}
+footer nav.nav-menu a{
+    color:  #FFFFFF;
+    display: block;
+    padding: 8px 0px;
+} 
+.copyright p {
+    padding: 10px 0px;
 }
 
 /* Back to top  */
@@ -572,6 +700,8 @@ margin: 20px;
 }
 
 /* Responsive  */
+
+
 @media (max-width: 1050px) {
     header nav.navbar{
         display: none;
@@ -585,5 +715,106 @@ margin: 20px;
     header .navbar-toggler i {
         font-size: 20px;
     }
-
 }
+
+@media (max-width: 766px) {
+    /* #service-price .service {
+        margin: 0px auto;
+    } */
+
+    /* bảng giá */
+    #service-price .title h2{
+        font-size: 24px;
+    }
+
+    /* trial */
+    #trial h2 {
+        font-size: 20px;
+    }
+
+    main .btn-trial {
+       font-size: 16px;
+    }
+
+    /* mobile */
+    .mobile .app {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main .mobile h1 {
+        font-size: 24px;
+    }
+
+    main .mobile p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    #customer h2 {
+        font-size: 24px !important;
+    }
+
+    #intro-2 h2{
+        font-size: 20px;
+    }
+ }
+ 
+ @media (max-width: 991px) {
+    #service-price .supplies .basic{
+        order: 2;
+    }
+    #service-price .supplies .advanced{
+         order: 3;
+     }
+     #service-price .supplies .middle{
+         order: 1;
+         padding-top: 20px;
+     }
+ 
+     #service-price .title h1 {
+         font-size: 32px;
+     }
+     #customer h2 {
+         font-size: 32px;
+     }
+     
+     .supplies .middle i{
+         margin: 0px auto;
+     } 
+ 
+     main .mobile h1 {
+         font-size: 28px;
+     }
+ 
+     /* bảng giá */
+     #service-price .title h2{
+         font-size: 28px;
+     }
+ 
+     #trial h2 {
+         font-size: 24px;
+     }
+ 
+     main .btn-trial {
+         font-size: 18px;
+      }
+      
+      footer {
+          padding-left: 50px;
+      }
+ }
+
+ @media (max-width: 886px) {
+    #slideshow-2 .item {
+        max-width: 560px;
+        margin: 0px auto;
+    }
+ }
+
+
+
+
+
+

@@ -31,6 +31,22 @@ header nav button.btn-login{
     width: 115px;
     height: 38px;
 }
+ 
+header #banner .item .intro-content{
+    position: absolute; 
+    left: 15%; 
+    top: 20%;
+    max-width: 600px;
+    width: 100%;
+}
+
+header #banner .item h2 {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: #2F4858;
+}
+
 
 
 
@@ -206,7 +222,7 @@ main section.service .tab_container{
 /* ---------------------BẢNG GIÁ SẢN PHẨM-----------------  */
 /* Basic */
 #service-price .title h1{
-    font-size: 36px;
+    font-size: 2.5vw;
     color: #2F4858;
     font-weight: 700;
 }
@@ -234,6 +250,7 @@ main section.service .tab_container{
     font-weight: 700;
     color: #4F4F4F;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 #service-price .supplies .basic .title p {
@@ -257,10 +274,15 @@ main section.service .tab_container{
     font-size: 15px;
 }
 
-#service-price  .btn-trial {
-    /* position: absolute;
-    bottom: 10%; */
+#service-price .supplies  .trial{
+    border-top: 2px dashed #BDBDBD;
 }
+
+#service-price  .btn-trial {
+   margin: 29px auto;
+}
+
+
 
 #service-price .btn-trial :hover{
     color: #4A6069;
@@ -268,7 +290,8 @@ main section.service .tab_container{
 
 /* middle */
 #service-price .supplies .middle img{
-    width: 100%;
+    margin: 0px auto;
+    display: block;
 }
 
 #service-price .supplies .middle i {
@@ -296,6 +319,7 @@ main section.service .tab_container{
     font-weight: 700;
     color:  #F9C52C;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 #service-price .supplies .advanced .title p {

@@ -32,6 +32,8 @@
   <!-- Aos js -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Flag Strap -->
+
 </head>
 
 <body>
@@ -69,10 +71,7 @@
             <a class="nav-link" href="">Phản Hồi</a>
           </li>
         </ul>
-        <select>
-          <option>Vi</option>
-          <option>English</option>
-        </select>
+        <span class="country">Vi</span>
         <button type="button" class="btn btn-register">Đăng ký</button>
         <button type="button" class="btn btn-login">Đăng nhập</button>
       </nav>
@@ -110,10 +109,7 @@
               </li>
             </ul>
             <div class="nav-item mb-4">
-              <select class="selectpicker" countrypicker data-flag="true">
-                <option>Vi</option>
-                <option>English</option>
-              </select>
+              <span class="country">Vi</span>
             </div>
             <div class="nav-item">
               <button type="button" class="btn btn-register">Đăng ký</button>
@@ -128,36 +124,30 @@
 
   <div id="banner" class="owl-carousel owl-theme">
     <div class="item">
+      <div class="intro-content">
+        <h2 class="text-dark">Giải pháp điện toán đám mây
+          <span class="text-default-1"> quản lý Salon</span> hiệu quả nhất
+        </h2>
+        <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
+      </div>
       <img class="img-fluid" src="images/banner-1.png" alt="" />
-      <div>
-        <div class="intro-content">
-          <h2 class="text-dark">Giải pháp điện toán đám mây
-            <span class="text-default-1"> quản lý Salon</span> hiệu quả nhất
-          </h2>
-          <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
-        </div>
-      </div>
     </div>
     <div class="item">
+      <div class="intro-content">
+        <h2>Tương tác thường xuyên với <span class="text-default-1">Khách hàng</span> thân thiết</h2>
+        <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
+      </div>
       <img class="img-fluid" src="images/banner-2.png" alt="" />
-      <div>
-        <div class="intro-content">
-          <h2>Tương tác thường xuyên với <span class="text-default-1">Khách hàng</span> thân thiết</h2>
-          <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
-        </div>
-      </div>
     </div>
     <div class="item">
-      <img class="img-fluid" src="images/banner-3.png" alt="" />
-      <div>
-        <div class="intro-content">
-          <h2>Giải pháp điện toán đám mây <span class="text-default-1">quản lý Salon</span> hiệu quả nhất</h2>
-          <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
-        </div>
+      <div class="intro-content">
+        <h2>Giải pháp điện toán đám mây <span class="text-default-1">quản lý Salon</span> hiệu quả nhất</h2>
+        <button class="btn btn-trial-banner">Dùng thử miễn phí</button>
       </div>
+      <img class="img-fluid" src="images/banner-3.png" alt="" />
     </div>
   </div>
-  
+
   <main>
     <!-- ------------------------LỢI ÍCH KHI SỬ DỤNG SẢN PHẨM------------------------ -->
     <section id="advantage" data-aos="fade-up" data-aos-duration="1000">
@@ -198,56 +188,63 @@
         <ul class="tab_navigation d-flex flex-lg-row justify-content-between flex-wrap">
           <li class="item">
             <div class="icon">
-              <img src="images/salon.png" alt="" />
+              <img class="dark" src="images/salon-dark.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/salon-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Quản lý chuối salon</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/calender.png" alt="" />
+              <img class="dark" src="images/calender-dark.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/calender-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Quản lý lịch hẹn</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/partner.png" alt="" />
+              <img class="dark" src="images/partner-dark.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/partner-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Quản lý thành viên</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/shoping.png" alt="" />
+              <img class="dark" src="images/shopping-dask.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/shopping-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Bán hàng</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/stock.png" alt="" />
+              <img class="dark" src="images/stock-dark.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/stock-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Quản lý kho</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/employee.png" alt="" />
+              <img class="dark" src="images/employee-dask.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/employee-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Quản lý nhân viên</p>
           </li>
           <li class="item">
             <div class="icon">
-              <img src="images/statistics.png" alt="" />
+              <img class="dark" src="images/statistics-dask.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
+              <img class="light" src="images/statistics-light.svg" alt="" data-aos="fade-up" data-aos-duration="1000" />
             </div>
             <p>Báo cáo thống kê</p>
           </li>
         </ul>
 
         <!-- ---------------------- GIỚI THIỆU VỀ SẢN PHẨM  1---------------------- -->
-        <div id="service-detail" class="tab_container_area mt-5 " data-aos="fade-up">
+        <div id="service-detail" class="tab_container_area mt-5 " data-aos="fade-up" data-aos-duration="800">
           <div class="tab_container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
                 <img class="img-fluid" src="images/business-people.png" alt="" />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
                 <h5 class="mt-5">Tổng hợp dữ liệu nhanh chóng, chính xác</h5>
                 <p class="mt-3">
                   Báo cáo thông tin lịch hẹn, doanh thu… chi tiết đến từng salon
@@ -329,10 +326,9 @@
         </div>
       </div>
     </section>
-
     <!-- --------------------- BẢNG GIÁ PHẦN MỀM QUẢN LÝ ----------------------- -->
     <section id="service-price" class="wp-content mt-5">
-      <div class="title text-center mb-5" data-aos="fade-up" data-aos-duration="1000" >
+      <div class="title text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
         <h2>Bảng giá phần mềm quản lý <span>Spa, salon vSalon</span></h1>
           <p>
             Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử
@@ -531,7 +527,7 @@
         <div class="input-group" data-aos="fade-right" data-aos-duration="1000">
           <img src="images/email.png" alt="" />
           <input type="text" class="form-control" placeholder="Nhập mail hoặc số điện thoại của bạn" />
-          <a class="btn" href="" >Đăng ký ngay</a>
+          <a class="btn" href="">Đăng ký ngay</a>
         </div>
       </div>
     </section>
@@ -620,10 +616,9 @@
 <script>
   $(document).ready(function () {
     AOS.init({
-      // once: true,
+      once: true,
     });
   });
-
 
 </script>
 

@@ -3,7 +3,7 @@ $(document).ready(function () {
         center: true,
         loop: true,
         dots: false,
-        nav : false,
+        nav : true,
         // autoplay: true,
         // autoplayTimeout : 3000,
         responsive: {
@@ -86,9 +86,16 @@ $(document).ready(function () {
 
 //Tab menu Navigation
 $(document).ready(function(){
+
+    //reset icon 
+    $('.tab_navigation li .icon .light').css('display','none');
+    $('.tab_navigation li .icon .dark').css('display','inline-block');
+
     // set defaut active for tab navigation first 
     $('.tab_container:first').show();
     $('.tab_navigation li:first').addClass('active');
+    $('.tab_navigation .item.active .light').css('display','inline-block');
+    $('.tab_navigation .item.active .dark').css('display','none');
 
     // set defaut active for tab navigation was clicked        
     $('.tab_navigation li').click(function(event){
@@ -97,8 +104,17 @@ $(document).ready(function(){
         $(this).eq(0).addClass('active');
         $('.tab_container').hide();
         $('.tab_container').eq(index).show();
+        
+        //reset icon when click
+        $('.tab_navigation li .icon .light').css('display','none');
+        $('.tab_navigation li .icon .dark').css('display','inline-block');
+
+        // active for navigation clicked
+        $('.tab_navigation .item.active .light').css('display','inline-block');
+        $('.tab_navigation .item.active .dark').css('display','none');
     });
 });
+
 
 
 // Back to top

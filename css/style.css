@@ -1,6 +1,16 @@
 /* ----------------------HEADER------------------------ */
 /* -------------MENU-------------- */
 
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1920px;
+    -webkit-box-shadow: 0 0 6px #333;
+    box-shadow: 0 0 6px #333;
+    background-color: white;
+}
+
 header nav.navbar ul.navbar-nav li.nav-item .nav-link {
     font-weight: 500;
     font-size: 16px;    
@@ -32,21 +42,25 @@ header nav button.btn-login{
     height: 38px;
 }
  
-header #banner .item .intro-content{
+/* #banner{
+    padding-top: 80px;
+} */
+
+#banner .item .intro-content{
     position: absolute; 
     left: 15%; 
     top: 20%;
     max-width: 600px;
 }
 
-header #banner .item h2 {
+#banner .item h2 {
     line-height: 1.5;
     font-weight: 700;
     font-size: 38px;
     color: #2F4858;
     margin-bottom: 60px;
 }
-header #banner .item{
+#banner .item{
   font-size: 38px;
 }
 
@@ -180,11 +194,42 @@ main section.service li.item {
     width: 100%;
     max-width: 160px; 
     margin: 5px;
+    position: relative;
+}
+
+main section.service .item.active .icon{
+    background-color: #3BB54A;
+}
+
+main .service li.item.active::before{
+    content: "";
+    background: #3bb54a;
+    border-radius: 3px; 
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0px; 
+    transition: all 0.3s ease-out; 
+}
+
+main .service .item ::before {
+    /* content: "";
+    background: #3bb54a;
+    border-radius: 3px;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: all 0.3s ease-out; */
+    content: "";
+    width: 0px;
 }
 
 main section.service li.item img {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 13px;
+    margin-left: 11px;
 }
 
 main section.service li.item div.icon {
@@ -194,6 +239,8 @@ main section.service li.item div.icon {
     margin: 0px auto;
     background-color: #F7F7F7;
 }
+
+
 
 main section.service li.item p {
     text-align: center;
@@ -223,16 +270,15 @@ main section.service .tab_container{
 
 
 /* ---------------------BẢNG GIÁ SẢN PHẨM-----------------  */
-#service-price .supplies{
+/* #service-price .supplies{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 #service-price .supplies .item {
-    width: 33.3%;
-    box-sizing: border-box;
+    max-width:  480px;
 }
 
 
@@ -354,27 +400,6 @@ main section.service .tab_container{
 #service-price .advanced .service  p i{
     color:  #F9C52C;
     margin-right: 15px;
-}
-
-/* Gửi email */
-/* #email div.wp-content .contact .input-group {
-    position: relative;
-} */
-
-/* 
-main div.wp-content .contact .input-group .email img{
-    position: absolute;
-    left: 16px;
-    top: 12px;
-    z-index: 999;
-} */
-#email h1 {
-    font-weight: 700;
-    font-size: 32px;
-    color: #2F4858;
-}
-#email h1 span {
-    color: #EFC01C;
 }
 
 
@@ -527,9 +552,61 @@ main .mobile p {
 
 
 /* --------------section gửi email liên hệ-------------------  */
-main section#email {
+#email {
     background-color: #FFFFFF;
     padding: 50px 0px;
+}
+
+#email h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #2F4858;
+}
+#email h1 span {
+    color: #EFC01C;
+}
+
+
+#email .input-group{
+    max-width: 705px;
+    position: relative;
+    margin: 0px auto;
+}
+
+#email .input-group img {
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    left: 24px;
+    top: 19px;
+    z-index: 99;
+}
+
+#email .input-group a {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 99;
+    background: linear-gradient(90deg, #3bb54a 0%, #7ec341 100%);
+    border-radius: 32px;
+    color: #ffffff;
+    height: 46px;
+    line-height: 31px;
+    text-decoration: none;
+}
+
+#email .input-group a:hover {
+    background: linear-gradient(90deg, #28632d 0%, #79b842 100%);
+}
+
+#email .input-group input {
+    height: 54px;
+    padding: 15px 161px 15px 64px;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 9px 32px rgb(89 92 219 / 5%);
+    border-radius: 32px;
 }
 
 
@@ -541,6 +618,7 @@ footer{
    /* background-position-x: -188px; */
    background-color: #2F4858;
    color:  #FFFFFF;
+   padding: 50px 0px;
 }
 
 footer nav.nav-menu{
@@ -551,11 +629,41 @@ footer .intro p {
     padding-right: 68px;
     line-height: 1.5;
 }
+
 footer nav.nav-menu a{
     color:  #FFFFFF;
     display: block;
     padding: 8px 0px;
+    text-decoration: none;
 } 
+
+footer nav.nav-menu a:hover{
+    color: #3BB54A;
+}
+
+footer .social span{ 
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer .social span:hover{ 
+  background-color: #3BB54A;
+}
+
+
 .copyright p {
     padding: 10px 0px;
 }
@@ -578,6 +686,15 @@ footer nav.nav-menu a{
     cursor: pointer;
     z-index: 999;
   }
+
+#backTop img {
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    z-index: 999;
+}
+
 
 
 /* ------------------------------Owl Carousel----------------- */
@@ -727,6 +844,10 @@ margin: 20px;
         font-size: 24px;
     }
 
+    #service-price .supplies .item {
+        margin: 10px auto;
+    }
+
     /* trial */
     #trial h2 {
         font-size: 20px;
@@ -769,10 +890,15 @@ margin: 20px;
          order: 3;
      }
      #service-price .supplies .middle{
-         order: 1;
-         padding-top: 20px;
+        order: 1;
+        padding-top: 20px;
+        margin: 0px auto;
      }
  
+    #service-price {
+        padding: 0px 30px;
+    }
+
      #service-price .title h1 {
          font-size: 32px;
      }
@@ -802,7 +928,7 @@ margin: 20px;
       }
       
       footer {
-          padding-left: 50px;
+          padding: 0px 30px;
       }
  }
 

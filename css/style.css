@@ -65,10 +65,6 @@ header .navbar span.country::after{
     margin-left: 30px;
 }
 
-/* #banner{
-    padding-top: 80px;
-} */
-
 #banner .item .intro-content{
     position: absolute; 
     left: 15%; 
@@ -83,12 +79,10 @@ header .navbar span.country::after{
     color: #2F4858;
     margin-bottom: 60px;
 }
+
 #banner .item{
   font-size: 38px;
 }
-
-
-
 
 /*--------------------- Menu phone header --------------------- */
 header .navbar-toggler{
@@ -99,28 +93,6 @@ header #nav-mobile .nav_phone-header {
     padding: 15px;
     border-bottom: 1px solid #e3e3e3;
   }
-  
-  #navbarResponsive ul li :first-child a {
-    color: #EE0033 !important;
-    font-weight: 600;
-  }
-  
-  #navbarResponsive ul {
-    list-style: none; 
-  }
-  
-  #navbarResponsive ul li ::before {
-    content: "\2022";  
-    color: red;
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    font-size: 18px;
-  }
-  
-  #navbarResponsive ul li:nth-last-child(5) ::before {
-    display: none;  
-  } 
   
   #wapper-phone-menu {
     position: fixed;

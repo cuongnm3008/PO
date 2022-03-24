@@ -2,23 +2,28 @@ $(document).ready(function () {
     $("#slideshow-1").owlCarousel({
         center: true,
         loop: true,
-        dots: false,
-        nav : true,
+        // dots: false,
+        // nav : true,
         // autoplay: true,
         // autoplayTimeout : 3000,
         responsive: {
             0: {
                 items: 1,
+                center: false,
                 dots: true,
                 nav : false,
             },
-            600: {
-                items: 1,
+            768: {
+                items: 2,
+                center: true,
                 dots: true,
                 nav : false,
             },
             1200: {
                 items: 2,
+                center: true,
+                dots: false,
+                nav : true,
             },
         },
     });
@@ -40,7 +45,8 @@ $(document).ready(function () {
                       items: 1,
                   },
                   900: {
-                      items: 2,
+                    // center: false,
+                    items: 2,
                   },
                   1200: {
                       items: 3,

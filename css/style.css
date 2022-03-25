@@ -356,6 +356,8 @@ main section.service .tab_container {
 #service-price .supplies .basic:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+    background-image: url(../images/bg-goi-co-ban-light.png);
+    z-index: 999;
 }
 
 #service-price .supplies .basic {
@@ -440,9 +442,12 @@ main section.service .tab_container {
     border-radius: 8px
 }
 
+
 #service-price .supplies .advanced:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+    background-image: url(../images/bg-goi-nang-cao-light.png);
+    z-index: 999;
 }
 
 

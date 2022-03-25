@@ -53,9 +53,10 @@ body, html {
 
 .line-sm{
     width: 36px;
-    height: 2px;
-    background-color: #3BB54A;
-    border: solid #3BB54A;
+    height: 2px !important;
+    background-color: #69E378;
+    border: solid #69E378;
+    border-radius: 7px;
     opacity: 1;
 }
 
@@ -63,8 +64,9 @@ body, html {
 .line-md{
     width: 67px;
     height: 2px;
-    background-color: #3BB54A;
-    border: solid #3BB54A;
+    background-color: #69E378;
+    border: solid #69E378;
+    border-radius: 7px;
     opacity: 1;
 }
 
@@ -72,8 +74,9 @@ body, html {
 .line-lg{
     width: 128px;
     height: 2px;
-    background-color: #3BB54A;
-    border: solid #3BB54A;
+    background-color: #69E378;
+    border: solid #69E378;
+    border-radius: 7px;
     opacity: 1;
     margin: 0px auto;
 }

@@ -45,7 +45,7 @@ $(document).ready(function () {
                       items: 1,
                   },
                   900: {
-                    // center: false,
+                    center: false,
                     items: 2,
                   },
                   1200: {

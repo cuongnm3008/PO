@@ -63,6 +63,7 @@ header .navbar span.country::after {
     position: absolute;
     left: 18px;
 }
+/* 
 
 #nav-mobile .nav-item span {
     margin-left: 30px;
@@ -495,6 +496,12 @@ main section.service .tab_container {
     border: 2px solid #FFFFFF;
 }
 
+#trial .btn-trial:hover {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #3bb54a 0%, #7ec341 100%);
+}
+
+
 #service-detail .tab_container img {
     border: 2px solid #3BB54A;
     box-sizing: border-box;
@@ -502,13 +509,25 @@ main section.service .tab_container {
     box-shadow: 10px 15px #e1ffe5;
 }
 
+#service-detail .tab_container h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2F4858;
+}
+
+#service-detail .tab_container p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A6069;
+}
 
 
 /* -------------------Mobile section------------------- */
 
 main .mobile {
     background-image: url(../images/bg-mobile.png);
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
 }
 
 main .mobile h1 {
@@ -524,11 +543,14 @@ main .mobile p {
     padding-bottom: 80px;
 }
 
+main .mobile .app img:first-child{
+    margin-right: 16px;
+}
 /* ------------------Cảm nhận của khách hàng-------------------  */
 #customer {
     background-image: url(../images/customer-review-bg.jpg);
     background-repeat: no-repeat;
-    padding: 50px 0px;
+    padding: 30px 0px;
 }
 
 #customer h2 {
@@ -957,7 +979,7 @@ footer .social span:hover {
     }
 
     footer {
-        padding: 50px 30px 20px 30px;
+        padding: 50px 15px 20px 15px;
     }
 }
 
@@ -974,7 +996,7 @@ footer .social span:hover {
     }
 
     header .navbar-toggler i {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #banner .item .bg-desktop {
@@ -1067,6 +1089,10 @@ footer .social span:hover {
     main .btn-trial {
         font-size: 18px;
     }
+
+    main .mobile p {
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 886px) {
@@ -1079,7 +1105,13 @@ footer .social span:hover {
         background-color: white;
     }
 
+    main .mobile .app{
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
+
 
 @media (max-width: 766px) {
 
@@ -1112,7 +1144,12 @@ footer .social span:hover {
     .mobile .app {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-around !important;
+    }
+
+    .mobile .row .col-md-6:nth-child(2){
+        display: flex;
+        justify-content: center;
     }
 
     main .mobile p {
@@ -1142,9 +1179,6 @@ footer .social span:hover {
 
 
 @media (max-width: 680px) {
-
-
-
     #banner .item .bg-tablet {
         display: none;
     }
@@ -1240,9 +1274,32 @@ footer .social span:hover {
         padding: 0px 8px;
     }
 
+    #email h1, .input-group {
+        padding: 0px 8px;
+    }
+
 
     #intro-2 h2 {
         padding: 0px 10px;
     }
 
+    footer .intro p {
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    #wapper-phone-menu {
+        max-width: 356px;
+
+    }
+
+    .mobile .app {
+       
+    }
+    .mobile .app img{
+        width: 150px;
+        padding: 0px 15px;
+    }
 }

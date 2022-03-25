@@ -45,9 +45,9 @@
   <header>
     <div class="navbar navbar-light row wp-content">
       <div class="col-2 logo">
-        <img class="img-fluid" src="images/logo.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
-      <button class="navbar-toggler" type="button">
+      <button class="navbar-toggler" style="border-color: #FAFAFA; color: #2F4858;" type="button">
         <i class="fas fa-bars"></i>
       </button>
       <nav class="col navbar">
@@ -106,10 +106,8 @@
               <div class="nav-item mb-4">
                 <span class="country">Vi</span>
               </div>
-              <div class="nav-item">
-                <button type="button" class="btn btn-register">Đăng ký</button>
-                <button type="button" class="btn btn-login">Đăng nhập</button>
-              </div>
+              <button type="button" class="btn btn-register">Đăng ký</button>
+              <button type="button" class="btn btn-login">Đăng nhập</button>
           </ul>
         </div>
       </div>
@@ -625,13 +623,13 @@
         Hãy dùng thử miễn phí phần mềm trước, vSalon sẽ tư vấn cho bạn gói
         dịch vụ phù hợp sau nhé!
       </h2>
-      <button class="btn-trial btn" data-aos="fade-up" data-aos-duration="1000">Dùng thử ngay</button>
+      <button class="btn-trial btn">Dùng thử ngay</button>
     </div>
 
     <!-- --------------------- MOBILE SECTION -------------------------- -->
     <section class="mobile" data-aos="fade-up" data-aos-duration="600">
       <div class="wp-content row">
-        <div class="col-md-6">
+        <div class="content col-md-6">
           <h1 data-aos="fade-up" data-aos-duration="800">
             Ứng dụng quản lý salon miễn phí <span class="text-default-1">trên điện thoại</span>
           </h1>
@@ -644,8 +642,9 @@
             <img class="img-fluid" src="images/appstore.png" alt="" />
             <img class="img-fluid" src="images/googleplay.png" alt="" />
           </div>
+        
         </div>
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <img class="img-fluid" src="images/mobile.png" alt="" />
         </div>
       </div>
@@ -749,7 +748,7 @@
     </section>
 
   </main>
-  <footer data-aos="fade-up" data-aos-duration="2000">
+  <footer >
     <div class="wp-content">
       <div class="logo">
         <img class="img-fluid" src="images/footer-logo.png" alt="logo" />
@@ -799,7 +798,7 @@
               <i class="fa-solid fa-phone"></i>
               0865.500.968
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="1000">
               <i class="fa-solid fa-envelope"></i>
               Support@vSalon.vn
             </p>
@@ -833,7 +832,7 @@
 <script>
   $(document).ready(function () {
     AOS.init({
-      once: true,
+      // once: true,
     });
   });
 

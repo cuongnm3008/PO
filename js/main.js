@@ -78,23 +78,8 @@ $(document).ready(function () {
     });
 });
 
-// //Tab menu Navigation
-// $(document).ready(function(){
-//     // set defaut active for tab navigation first 
-//     $('.tab_container:first').show();
-//     $('.tab_navigation li:first div').addClass('active');
 
-//     // set defaut active for tab navigation was clicked        
-//     $('.tab_navigation li').click(function(event){
-//         index  = $(this).index();
-//         $('.tab_navigation li div').removeClass('active');
-//         $(this).children('div').eq(0).addClass('active');
-//         $('.tab_container').hide();
-//         $('.tab_container').eq(index).show();
-//     });
-// });
-
-//Tab menu Navigation
+//Tab menu Navigation for desktop
 $(document).ready(function(){
 
     //reset icon 
@@ -125,7 +110,35 @@ $(document).ready(function(){
     });
 });
 
-
+//Tab menu Navigation for mobile
+$(document).ready(function(){
+     //reset icon 
+     $('#tab_nav_mobile li .icon .light').css('display','none');
+     $('#tab_nav_mobile li .icon .dark').css('display','inline-block');
+ 
+     // set defaut active for tab navigation first 
+     $('.tab_content:first').show();
+     $('#tab_nav_mobile li:first').addClass('active');
+     $('#tab_nav_mobile .item.active .light').css('display','inline-block');
+     $('#tab_nav_mobile .item.active .dark').css('display','none');
+ 
+     // set defaut active for tab navigation was clicked        
+     $('#tab_nav_mobile li').click(function(event){
+         index  = $(this).index();
+         $('#tab_nav_mobile li').removeClass('active');
+         $(this).eq(0).addClass('active');
+         $('.tab_content').hide();
+         $('.tab_content').eq(index/2).show();
+         
+         //reset icon when click
+         $('#tab_nav_mobile li .icon .light').css('display','none');
+         $('#tab_nav_mobile li .icon .dark').css('display','inline-block');
+ 
+         // active for navigation clicked
+         $('#tab_nav_mobile .item.active .light').css('display','inline-block');
+         $('#tab_nav_mobile .item.active .dark').css('display','none');
+     });
+});
 
 // Back to top
 $(document).ready(function () {

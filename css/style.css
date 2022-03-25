@@ -167,6 +167,11 @@ main #advantage {
     margin-top: 60px;
 }
 
+main #advantage h2 {
+    font-size: 38px;
+    color: #4A6069;
+    font-weight: 700;
+}
 #slideshow-1 .item {
     background: #FFFFFF;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
@@ -199,6 +204,7 @@ main section.service {
 main section.service li.item {
     width: 100%;
     max-width: 160px;
+    /* flex-grow: 1; */
     margin: 5px;
     position: relative;
 }
@@ -222,6 +228,17 @@ main .service li.item.active::before {
 main .service li.item::before {
     content: "";
     width: 0px;
+}
+
+main .service li.item:nth-child(-n+6)::after {
+    content: "";
+    position: absolute;
+    background: #e0e0e0;
+    width: 2px;
+    height: 39.5px;
+    right: -10px;
+    top: 32px;
+    cursor: auto;
 }
 
 main section.service li.item img {
@@ -273,6 +290,9 @@ main section.service .tab_container {
     display: none;
 }
 
+#tab_nav_mobile{
+    display: none;
+}
 
 /* ---------------------BẢNG GIÁ SẢN PHẨM-----------------  */
 /* #service-price .supplies{
@@ -1116,34 +1136,51 @@ footer .social span:hover {
         padding: 0px 5px;
     }
 
+    main section.service .tab_navigation{
+        display: none;
+    }
 
+    main #service-detail{
+        display: none;
+    }
 
-    section.service li.item {
+    #tab_nav_mobile{
+        display: block;
+    }
+
+    section.service #tab_nav_mobile li.item {
         width: 100%;
         max-width: 500px !important;
         background-color: #F2F2F2;
         height: 100%;
         min-height: 80px;
+       list-style: none;
     }
-    main .service li.item.active::before{
+    
+    main .service #tab_nav_mobile li.item.active::before{
         display: none;
     }
-    main section.service li.item div.icon {
+    main section.service #tab_nav_mobile li.item div.icon {
         position: absolute;
         top: 10px;
         left: 20px;
 
     }
-    main section.service li.item p{
+    main section.service #tab_nav_mobile li.item p{
         line-height: 80px;
         padding: 0px;
         margin: auto 0px;
     }
-    main section.service li.item i {
+    main section.service #tab_nav_mobile li.item i {
         display: block;
         position: absolute;
         right: 28px;
         top: 29px;
         font-size: 20px;
     }
+
+    main .service #tab_nav_mobile li.item:nth-child(-n+6)::after{
+       width: 0px;
+    }
+
 }

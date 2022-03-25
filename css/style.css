@@ -68,11 +68,23 @@ header .navbar span.country::after {
     margin-left: 30px;
 }
 
-#banner .item .bg-tablet{
+
+#nav-mobile .navbar-nav .nav-link {
+    color: #2F4858 ;
+    text-decoration: none;
+}
+
+/* .navbar-light .navbar-nav .nav-link {
+    color: #3BB54A !;
+ } */
+ 
+
+
+#banner .item .bg-tablet {
     display: none;
 }
 
-#banner .item .bg-mobile{
+#banner .item .bg-mobile {
     display: none;
 }
 
@@ -172,6 +184,7 @@ main #advantage h2 {
     color: #4A6069;
     font-weight: 700;
 }
+
 #slideshow-1 .item {
     background: #FFFFFF;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
@@ -181,7 +194,21 @@ main #advantage h2 {
     min-height: 380px;
     max-height: 423px;
     margin: 10px;
+    padding: 0px 30px;
 }
+
+#slideshow-1 .item h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3BB54A;
+}
+#slideshow-1 .item p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    padding: 0px 30px;
+}
+
 
 #slideshow-1 .item img {
     height: 100%;
@@ -202,9 +229,10 @@ main section.service {
 }
 
 main section.service li.item {
-    width: 100%;
-    max-width: 160px;
-    /* flex-grow: 1; */
+    /* width: 100%;
+    max-width: 160px; */
+    flex-grow: 1;
+    padding: 0px 10px;
     margin: 5px;
     position: relative;
 }
@@ -290,7 +318,7 @@ main section.service .tab_container {
     display: none;
 }
 
-#tab_nav_mobile{
+#tab_nav_mobile {
     display: none;
 }
 
@@ -325,9 +353,9 @@ main section.service .tab_container {
     font-weight: 500;
 }
 
-#service-price .supplies .basic:hover{
-    transform: scale(1.1); 
-    transition: all 0.3s ease-in-out; 
+#service-price .supplies .basic:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
 #service-price .supplies .basic {
@@ -412,9 +440,9 @@ main section.service .tab_container {
     border-radius: 8px
 }
 
-#service-price .supplies .advanced:hover{
-    transform: scale(1.1); 
-    transition: all 0.3s ease-in-out; 
+#service-price .supplies .advanced:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -529,15 +557,15 @@ main .mobile p {
 #slideshow-2 .item:hover {
     z-index: 1;
     background-color: #3bb54a;
-    transform: scale(1.05); 
-    transition: all 0.3s ease-in-out; 
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
-#slideshow-2 .item:hover .infor h3{
+#slideshow-2 .item:hover .infor h3 {
     color: white;
 }
 
-#slideshow-2 .item:hover p{
+#slideshow-2 .item:hover p {
     color: white;
 }
 
@@ -545,7 +573,7 @@ main .mobile p {
     border-bottom: 1px dashed white;
 }
 
-#slideshow-2 .item:hover .infor span{
+#slideshow-2 .item:hover .infor span {
     color: #2F4858;
 }
 
@@ -922,6 +950,10 @@ footer .social span:hover {
     #banner .item .intro-content {
         left: 5%;
     }
+
+    footer {
+        padding: 50px 30px 20px 30px;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -940,21 +972,21 @@ footer .social span:hover {
         font-size: 20px;
     }
 
-    #banner .item .bg-desktop{
+    #banner .item .bg-desktop {
         display: none;
     }
 
-    #banner .item .bg-tablet{
+    #banner .item .bg-tablet {
         display: block;
     }
 
-    /* #banner .item .intro-content {
-        max-width: 400px;
-    }
+    #email h1 {
+        padding: 0px 20px;
 
-    #banner .item .intro-content h2 {
-        font-size: 28px;
-    } */
+    }
+    #intro-2 h2 {
+        padding: 0px 20px;
+    }
 
 }
 
@@ -989,10 +1021,12 @@ footer .social span:hover {
         padding-top: 20px;
         margin: 0px auto;
     }
+
     #service-price .supplies .middle img {
         display: none;
     }
-    #service-price .supplies .middle p{
+
+    #service-price .supplies .middle p {
         padding: 0px;
     }
 
@@ -1028,10 +1062,6 @@ footer .social span:hover {
     main .btn-trial {
         font-size: 18px;
     }
-
-    footer {
-        padding: 0px 30px;
-    }
 }
 
 @media (max-width: 886px) {
@@ -1051,21 +1081,14 @@ footer .social span:hover {
 
 
     #service-detail .tab_container .row .col-md-6:first-child {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
-    #service-detail .tab_container .row{
+    #service-detail .tab_container .row {
         padding: 0px 20px;
     }
-    
-    
 
-
-    /* bảng giá */
-    #service-price .title h2 {
-        font-size: 24px;
-    }
 
     #service-price .supplies .item {
         margin: 10px auto;
@@ -1087,17 +1110,13 @@ footer .social span:hover {
         justify-content: space-around;
     }
 
-    main .mobile h1 {
-        font-size: 24px;
-    }
-
     main .mobile p {
         font-size: 16px;
         padding-bottom: 10px;
     }
 
-    #customer h2 {
-        font-size: 24px !important;
+    #service-price .title h2 {
+        font-size: 28px;
     }
 
     #intro-2 h2 {
@@ -1109,21 +1128,23 @@ footer .social span:hover {
         transform: unset;
         opacity: 1;
     }
-    
+
     #slideshow-1 .owl-item.center~.owl-item.active,
     #slideshow-1 .owl-item.center~.owl-item {
         transform: unset;
-        }
+    }
 }
 
 
 @media (max-width: 680px) {
 
-    #banner .item .bg-tablet{
+
+
+    #banner .item .bg-tablet {
         display: none;
     }
 
-    #banner .item .bg-mobile{
+    #banner .item .bg-mobile {
         display: block;
     }
 
@@ -1131,46 +1152,68 @@ footer .social span:hover {
         font-size: 28px;
     }
 
-    #banner .item .intro-content{
+    #banner .item .intro-content {
         top: 10px;
         padding: 0px 5px;
     }
 
-    main section.service .tab_navigation{
+    main section.service .tab_navigation {
         display: none;
     }
 
-    main #service-detail{
+    main #service-detail {
         display: none;
     }
 
-    #tab_nav_mobile{
+    #tab_nav_mobile {
         display: block;
+        padding: 0px 10px;
+    }
+
+    #tab_nav_mobile .tab_content {
+        display: none;
+        padding: 10px;
+    }
+
+    #tab_nav_mobile .tab_content .col-md-6:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tab_nav_mobile .tab_content img {
+        border: 2px solid #3BB54A;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 10px 15px #e1ffe5;
     }
 
     section.service #tab_nav_mobile li.item {
         width: 100%;
-        max-width: 500px !important;
+        max-width: 600px !important;
         background-color: #F2F2F2;
         height: 100%;
         min-height: 80px;
-       list-style: none;
+        list-style: none;
+        border-radius: 8px;
     }
-    
-    main .service #tab_nav_mobile li.item.active::before{
+
+    main .service #tab_nav_mobile li.item.active::before {
         display: none;
     }
+
     main section.service #tab_nav_mobile li.item div.icon {
         position: absolute;
         top: 10px;
         left: 20px;
 
     }
-    main section.service #tab_nav_mobile li.item p{
+
+    main section.service #tab_nav_mobile li.item p {
         line-height: 80px;
         padding: 0px;
         margin: auto 0px;
     }
+
     main section.service #tab_nav_mobile li.item i {
         display: block;
         position: absolute;
@@ -1179,8 +1222,24 @@ footer .social span:hover {
         font-size: 20px;
     }
 
-    main .service #tab_nav_mobile li.item:nth-child(-n+6)::after{
-       width: 0px;
+    main .service #tab_nav_mobile li.item:nth-child(-n+6)::after {
+        width: 0px;
+    }
+
+
+    #service-price .supplies .middle p {
+        text-align: left !important;
+    }
+
+    #email h1, .input-group ,p {
+        padding: 0px 8px;
+    }
+
+    #email p {
+        text-align: left;
+    }
+    #intro-2 h2 {
+        padding: 0px 10px;
     }
 
 }

@@ -38,8 +38,8 @@ $(document).ready(function () {
               center: true,
               loop: true,
               dots: true,
-            //   autoplay: true,
-            //   autoplayTimeout : 3000,
+              autoplay: true,
+              autoplayTimeout : 3000,
               responsive: {
                   0: {
                       items: 1,
@@ -62,8 +62,8 @@ $(document).ready(function () {
               loop: true,
               dots: false,
               nav: false,
-            //   autoplay: true,
-            //   autoplayTimeout : 3000,
+              autoplay: true,
+              autoplayTimeout : 3000,
               items: 1,
       });
 });
@@ -112,6 +112,7 @@ $(document).ready(function(){
 
 //Tab menu Navigation for mobile
 $(document).ready(function(){
+
      //reset icon 
      $('#tab_nav_mobile li .icon .light').css('display','none');
      $('#tab_nav_mobile li .icon .dark').css('display','inline-block');
@@ -138,6 +139,7 @@ $(document).ready(function(){
          $('#tab_nav_mobile .item.active .light').css('display','inline-block');
          $('#tab_nav_mobile .item.active .dark').css('display','none');
      });
+
 });
 
 // Back to top

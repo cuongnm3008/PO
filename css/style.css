@@ -458,6 +458,7 @@ main section.service .tab_container {
 #service-price .supplies .middle img {
     margin: 0px auto;
     display: block;
+    padding: 0px 15px;
 }
 
 #service-price .supplies .middle p {

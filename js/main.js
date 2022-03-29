@@ -19,6 +19,12 @@ $(document).ready(function () {
                 dots: true,
                 nav : false,
             },
+            1050: {
+                items: 2,
+                center: true,
+                dots: true,
+                nav : false,
+            },
             1200: {
                 items: 2,
                 center: true,

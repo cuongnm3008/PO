@@ -44,15 +44,19 @@ $(document).ready(function () {
               center: true,
               loop: true,
               dots: true,
-              autoplay: true,
-              autoplayTimeout : 3000,
+            //   autoplay: true,
+            //   autoplayTimeout : 3000,
               responsive: {
                   0: {
                       items: 1,
                   },
-                  900: {
+                  768: {
                     center: false,
                     items: 2,
+                  },
+                  1000: {
+                    center: false,
+                    items: 3,
                   },
                   1200: {
                       items: 3,
@@ -68,8 +72,8 @@ $(document).ready(function () {
               loop: true,
               dots: false,
               nav: false,
-              autoplay: true,
-              autoplayTimeout : 3000,
+            //   autoplay: true,
+            //   autoplayTimeout : 3000,
               items: 1,
       });
 });
@@ -98,7 +102,7 @@ $(document).ready(function () {
 $('#backTop').click(function (e) {
     $('html, body').animate({
         scrollTop: 0
-    }, 600);
+    }, 0);
 })
 
 

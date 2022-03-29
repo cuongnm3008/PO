@@ -5,12 +5,19 @@ body, html {
     height: 100%;
     font-family: 'Inter';
     background-color: #FAFAFA;
+    font-size: 14px
   }
   
+  .wapper{
+      width: 100%;
+      max-width: 1920px;
+      margin:0 auto;
+  }
 .wp-content{
     margin:0 auto;
     width:100%; 
     max-width: 1200px ;
+    padding: 0px 15px;
 }
 .wp-supplies{
     width: 100%;
@@ -44,7 +51,7 @@ body, html {
     color: #FFFFFF;
     background: #3BB54A;
     border-radius: 36px;
-    padding: 10 32px;
+    padding: 10px 32px;
     font-weight: 600;
     font-size: 20px;
 }
@@ -64,9 +71,8 @@ body, html {
 .line-md{
     width: 67px;
     height: 2px;
-    background-color: #69E378;
-    border: solid #69E378;
-    border-radius: 7px;
+    background-color: #3BB54A;
+    border: solid #3BB54A;
     opacity: 1;
 }
 
@@ -74,9 +80,8 @@ body, html {
 .line-lg{
     width: 128px;
     height: 2px;
-    background-color: #69E378;
-    border: solid #69E378;
-    border-radius: 7px;
+    background-color: #3BB54A;
+    border: solid #3BB54A;
     opacity: 1;
     margin: 0px auto;
 }

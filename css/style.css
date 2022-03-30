@@ -366,9 +366,11 @@ main section.service .tab_container {
 }
 #service-price .supplies .basic {
     max-width: 360px;
+    overflow: hidden;
 }
 #service-price .supplies .advanced {
     max-width: 360px;
+    overflow: hidden;
 }
 
 #service-price .supplies{
@@ -845,10 +847,12 @@ footer .social span {
     cursor: pointer;
 }
 
-footer .social span:hover {
-    background-color: #3BB54A;
+footer .social span:first-child:hover {
+    background-color: #0B83ED;
 }
-
+footer .social span:last-child:hover {
+    background-color: #FF0000;
+}
 
 .copyright p {
     padding: 10px 0px;
@@ -1292,9 +1296,11 @@ footer .social span:hover {
 
     #service-price .supplies .basic {
        width: 100%;
+       max-width: 430px;
     }
     #service-price .supplies .advanced {
         width: 100%;
+        max-width: 430px;
     }
    
 
@@ -1342,7 +1348,10 @@ footer .social span:hover {
         transform: unset;
     }
 
- 
+    /* #slideshow-2 .item{
+        width: 100%;
+        max-width: 430px;
+    } */
 
     footer .row>div>hr{
         margin-top: 0px;
